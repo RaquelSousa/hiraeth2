@@ -1,0 +1,13 @@
+.grid {
+  padding: 20px;
+  text-align: center;
+  .paper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    .icon {
+      padding-bottom: 10px;
+    }
+  }
+}
