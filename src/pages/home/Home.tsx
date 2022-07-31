@@ -2,12 +2,12 @@ import { FC } from "react";
 import "./home.scss";
 import { Box, Typography } from "@mui/material";
 import Menu from "../../components/drawer/Menu";
+import Layout from "../../components/layout/Layout";
 
 const Home: FC = () => {
   return (
     <>
       <Box sx={{ display: "flex" }}>
-        <Menu />
         <div className="body">
           <Typography variant="h1" align="center">
             HIRAETH

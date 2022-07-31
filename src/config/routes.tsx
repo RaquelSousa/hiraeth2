@@ -5,6 +5,7 @@ import RaiderRules from "../pages/raiderrules/RaiderRules";
 import Home from "../pages/home/Home";
 import PeopleAltTwoToneIcon from "@mui/icons-material/PeopleAltTwoTone";
 import ConnectWithoutContactTwoToneIcon from "@mui/icons-material/ConnectWithoutContactTwoTone";
+import Layout from "../components/layout/Layout";
 
 export interface RouteItem {
   key: string;
@@ -13,7 +14,7 @@ export interface RouteItem {
   path: string;
   component?: ReactNode | string;
   enabled: boolean;
-  icon?: string;
+  icon?: ReactNode | string;
   subRoutes?: Array<RouteItem>;
   isApp?: boolean;
   isIndex?: boolean;
@@ -24,23 +25,36 @@ export interface RouteItem {
 
 const ComingSoon: React.FC = () => <div>Coming Soon</div>;
 
-// export const ContainerRouter = () => (
-//   <Routes>
-//     {/* <Route path="/" element={<Layout />}> */}
-//     <Route index element={<Home />} />
-//     {moduleRoutes.map((route) => (
-//       <Route key={route.key} path={`${route.path}`} element={route.component} />
-//     ))}
-//   </Routes>
-// );
+export const ContainerRouter = () => (
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      {moduleRoutes.map((route) => (
+        <Route
+          key={route.key}
+          path={`${route.path}`}
+          element={route.component}
+        />
+      ))}
+    </Route>
+  </Routes>
+);
 
 export const moduleRoutes: Array<RouteItem> = [
+  {
+    key: "home",
+    path: "/",
+    enabled: true,
+    component: <Home />,
+    isIndex: true,
+    description: "Home",
+  },
   {
     key: "codeOfConduct",
     path: "codeOfConduct",
     enabled: true,
     component: <CodeOfConduct />,
-    // icon: ConnectWithoutContactTwoToneIcon,
+    icon: <ConnectWithoutContactTwoToneIcon />,
     description: "Code of Conduct",
   },
   {

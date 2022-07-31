@@ -1,15 +1,15 @@
 import "./App.scss";
-import Home from "./pages/home/Home";
 import * as React from "react";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter } from "react-router-dom";
+import { ContainerRouter } from "./config/routes";
 
 function App() {
   return (
     <BrowserRouter>
       <CssBaseline />
-      <Home />
+      <ContainerRouter />
     </BrowserRouter>
   );
 }
