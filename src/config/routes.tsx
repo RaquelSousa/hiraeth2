@@ -24,15 +24,15 @@ export interface RouteItem {
 
 const ComingSoon: React.FC = () => <div>Coming Soon</div>;
 
-export const ContainerRouter = () => (
-  <Routes>
-    {/* <Route path="/" element={<Layout />}> */}
-    <Route index element={<Home />} />
-    {moduleRoutes.map((route) => (
-      <Route key={route.key} path={`${route.path}`} element={route.component} />
-    ))}
-  </Routes>
-);
+// export const ContainerRouter = () => (
+//   <Routes>
+//     {/* <Route path="/" element={<Layout />}> */}
+//     <Route index element={<Home />} />
+//     {moduleRoutes.map((route) => (
+//       <Route key={route.key} path={`${route.path}`} element={route.component} />
+//     ))}
+//   </Routes>
+// );
 
 export const moduleRoutes: Array<RouteItem> = [
   {
