@@ -10,7 +10,9 @@ const CodeOfConductTiles: FC = () => {
         {codeOfConductContent.map((codeofconduct) => (
           <Grid item md={6}>
             <Paper className="paper">
-              <Icon className="icon">{codeofconduct.icon}</Icon>
+              <Icon className="icon" color="warning">
+                {codeofconduct.icon}
+              </Icon>
               {codeofconduct.content}
             </Paper>
           </Grid>

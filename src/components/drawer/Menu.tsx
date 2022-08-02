@@ -51,7 +51,6 @@ const Menu = () => {
         <Divider />
         <br />
         <img src={RaiderGuidelines} alt="Raider Guidelines" />
-        {/* <br /> */}
         <MenuList>
           {raiderRoutes.map((route: RouteItem) => (
             <Link

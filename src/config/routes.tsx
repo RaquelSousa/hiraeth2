@@ -9,6 +9,7 @@ import EventRepeatIcon from "@mui/icons-material/EventRepeat";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import Layout from "../components/layout/Layout";
 import RaiderRequirementsTimeline from "../pages/raiderexpectations/RaiderExpectations";
+import Events from "../pages/events/Events";
 
 export interface RouteItem {
   key: string;
@@ -64,7 +65,7 @@ export const moduleRoutes: Array<RouteItem> = [
     key: "Events",
     path: "events",
     enabled: true,
-    component: <ComingSoon />,
+    component: <Events />,
     icon: <EventRepeatIcon />,
     description: "Events",
   },
