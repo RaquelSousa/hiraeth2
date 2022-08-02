@@ -7,11 +7,9 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "./layout.scss";
 
-// const SharedButton = React.lazy(() => import("shared/Button"));
-
 const Layout = () => {
   return (
-    <Box sx={{ height: "100%" }}>
+    <Box sx={{ height: "100%" }} className="layout">
       <Grid container spacing={2} sx={{ padding: "15px" }}>
         <Grid item>
           <Paper sx={{ width: 220, maxWidth: "100%", height: "95vh" }}>
