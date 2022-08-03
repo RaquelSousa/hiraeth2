@@ -10,6 +10,7 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import Layout from "../components/layout/Layout";
 import RaiderRequirementsTimeline from "../pages/raiderexpectations/RaiderExpectations";
 import Events from "../pages/events/Events";
+import GuildBank from "../pages/guildbank/GuildBank";
 
 export interface RouteItem {
   key: string;
@@ -73,7 +74,7 @@ export const moduleRoutes: Array<RouteItem> = [
     key: "Guild Bank",
     path: "guidBank",
     enabled: true,
-    component: <ComingSoon />,
+    component: <GuildBank />,
     icon: <AccountBalanceIcon />,
     description: "Guild Bank",
   },
