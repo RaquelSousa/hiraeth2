@@ -9,6 +9,8 @@ import { Chip, ListItemButton, Stack, Typography } from "@mui/material";
 import MandatoryAddonsImg from "../../assets/mandatory_addons.png";
 import raiderAddonsContent from "../../models/raideraddons/RaiderAddons.enum";
 
+import Link from "@mui/material/Link";
+
 const RaiderAddons: FC = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
@@ -30,11 +32,15 @@ const RaiderAddons: FC = () => {
               <ListItemAvatar>{addons.icon}</ListItemAvatar>
               <ListItemButton
                 selected={selectedIndex === 0}
-                onClick={(event) => handleListItemClick(event, 0)}>
-                <ListItemText
-                  primary={<Chip label={addons.title} color="warning" />}
-                  secondary={addons.link1}
-                />
+                // onClick={(event) => handleListItemClick(event, 0)}
+              >
+                {/* <ListItemText
+                    primary={<Chip label={addons.title} color="warning" />}
+                    secondary={addons.link1}
+                  /> */}
+                <Link href={addons.link1} target="_blank">
+                  {addons.link1}
+                </Link>
               </ListItemButton>
             </ListItem>
           ))}
