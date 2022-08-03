@@ -9,18 +9,16 @@ import NotListedLocationTwoToneIcon from "@mui/icons-material/NotListedLocationT
 import FortTwoToneIcon from "@mui/icons-material/FortTwoTone";
 import RecordVoiceOverTwoToneIcon from "@mui/icons-material/RecordVoiceOverTwoTone";
 
-const raiderRequirementsContent = [
+const raiderAddonsContent = [
   {
-    id: "0",
-    title: "Comply To The Guidelines",
+    id: 0,
+    title: "DBM or BigWigs",
     icon: <MarkEmailReadIcon />,
-    secondTitle:
-      "Includes the Code of Conduct, Expectations and Minimum Requirements.",
-    oppositeContent:
-      "It's important to have clear goals and guidelines, to maintain a community we can all feel safe in. Things can become a bit nastier when we're talking about progression. We just need to make sure we keep our heads straight and our goals clear.",
+    link1: "https://www.curseforge.com/wow/addons/deadly-boss-mods",
+    link2: "https://www.curseforge.com/wow/addons/big-wigs",
   },
   {
-    id: "1",
+    id: 1,
     title: "Be Ponctual",
     icon: <AccessAlarmTwoToneIcon />,
     secondTitle:
@@ -29,7 +27,7 @@ const raiderRequirementsContent = [
       "Ideally, everyone is ready to be invited into the raid at least 10 minues before the raid starts, so that everything can be prepared.",
   },
   {
-    id: "4",
+    id: 4,
     title: "Be Active",
     icon: <PoolTwoToneIcon />,
     secondTitle:
@@ -38,7 +36,7 @@ const raiderRequirementsContent = [
       "If you start to slack on the stuff you need to do to remain up-to-date, ask yourself if you really want to keep raiding. Logging in purely for the raid is not enough. Having mythic kills brings you no status in life. It's a game. So make sure you want to play it.",
   },
   {
-    id: "5",
+    id: 5,
     title: "Trade BoEs",
     icon: <VolunteerActivismTwoToneIcon />,
     secondTitle: "Mythic Dropped BoEs are meant to be traded to Putri.",
@@ -46,7 +44,7 @@ const raiderRequirementsContent = [
       "You will get 50% of the gold it yields. Te other 50% will go to the guild bank, to fund consumables, which we provide to be able to progress as smoothly as possible.",
   },
   {
-    id: "6",
+    id: 6,
     title: "Use Item Enhancements",
     icon: <ConstructionTwoToneIcon />,
     secondTitle: "This includes enchants, gems, pots, flasks, armor kits, etc.",
@@ -54,7 +52,7 @@ const raiderRequirementsContent = [
       "Everything is provided by the guild. And if anything is missing and you are low on gold, you can ask an officer or any willing guild member to sort you out. Coming to a raid unprepared is unacceptable.",
   },
   {
-    id: "7",
+    id: 7,
     title: "Maintain The Wishlist",
     icon: <PlaylistAddCheckCircleTwoToneIcon />,
     secondTitle: "This includes enchants, gems, pots, flasks, armor kits, etc.",
@@ -62,7 +60,7 @@ const raiderRequirementsContent = [
       "Everything is provided by the guild. And if anything is missing and you are low on gold, you can ask an officer or any willing guild member to sort you out. Coming to a raid unprepared is unacceptable.",
   },
   {
-    id: "8",
+    id: 8,
     title: "Do Your Best",
     icon: <MilitaryTechTwoToneIcon />,
     secondTitle:
@@ -71,7 +69,7 @@ const raiderRequirementsContent = [
       "Everyone should strive to give their best when raiding, and spend time researching how to improve outside of raids.",
   },
   {
-    id: "9",
+    id: 9,
     title: "Raid Spots Are Not Guaranteed",
     icon: <NotListedLocationTwoToneIcon />,
     secondTitle:
@@ -80,7 +78,7 @@ const raiderRequirementsContent = [
       "Consequently, all players should expect to be rotated based on kils and loot needed. Harbouring expectations of a guaranteed personal raid spot will only lead to disappointment.",
   },
   {
-    id: "10",
+    id: 10,
     title: "The Raid Leader Is The Boss",
     icon: <FortTwoToneIcon />,
     secondTitle:
@@ -89,7 +87,7 @@ const raiderRequirementsContent = [
       "Feedback is welcome but make sure it's done in a orderly manner. If discussion is invited, then keep it brief and to the point. Preferably, major raid strategy discussion should be taken after the raid or on discord, outside of the heat of battle. Othewise 24 brilliant strategy ideas would bombar the Raid Leader senseless.",
   },
   {
-    id: "11",
+    id: 11,
     title: "Positive Criticism Is A Good Thing",
     icon: <RecordVoiceOverTwoToneIcon />,
     secondTitle:
@@ -98,4 +96,4 @@ const raiderRequirementsContent = [
       "Equally, Members should view any positive criticism as an opportunity to improve.",
   },
 ];
-export default raiderRequirementsContent;
+export default raiderAddonsContent;
