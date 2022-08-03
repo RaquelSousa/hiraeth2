@@ -1,61 +1,60 @@
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import AddTaskIcon from "@mui/icons-material/AddTask";
-import SwitchAccessShortcutAddIcon from "@mui/icons-material/SwitchAccessShortcutAdd";
-import UpgradeIcon from "@mui/icons-material/Upgrade";
-import InterpreterModeIcon from "@mui/icons-material/InterpreterMode";
-import RepeatIcon from "@mui/icons-material/Repeat";
-import HotelIcon from "@mui/icons-material/Hotel";
+import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
+import AccessAlarmTwoToneIcon from "@mui/icons-material/AccessAlarmTwoTone";
+import PoolTwoToneIcon from "@mui/icons-material/PoolTwoTone";
+import VolunteerActivismTwoToneIcon from "@mui/icons-material/VolunteerActivismTwoTone";
+import ConstructionTwoToneIcon from "@mui/icons-material/ConstructionTwoTone";
 
 const raiderRequirementsContent = [
   {
     id: "0",
-    title: "Do 4x M+15 a week",
-    icon: <FastfoodIcon />,
-    secondTitle: "Because you need new clothes!",
-    oppositeContent: "There's a M+ event on Tuesdays if you need help",
+    title: "Comply To The Guidelines",
+    icon: <MarkEmailReadIcon />,
+    secondTitle:
+      "Includes the Code of Conduct, Expectations and Minimum Requirements.",
+    oppositeContent:
+      "It's important to have clear goals and guidelines, to maintain a community we can all feel safe in. Things can become a bit nastier when we're talking about progression. We just need to make sure we keep our heads straight and our goals clear.",
   },
   {
     id: "1",
-    title: "Keep up-to-date with renown",
-    icon: <SwitchAccessShortcutAddIcon />,
-    secondTitle: "Because you need strength!",
-    oppositeContent: "This is probably going away soon",
-  },
-  {
-    id: "2",
-    title: "Upgrade your main Leggo ASAP",
-    icon: <UpgradeIcon />,
-    secondTitle: "Because you need improved clothes!",
-    oppositeContent: "This is probably going away soon",
-  },
-  {
-    id: "3",
-    title: "Signup/off to every raid in the discord bot",
-    icon: <AddTaskIcon />,
-    secondTitle: "Because we need to plan ahead!",
-    oppositeContent: "You'll get tagged in discord when the signups are up",
+    title: "Be Ponctual",
+    icon: <AccessAlarmTwoToneIcon />,
+    secondTitle:
+      "We only raid twice a week so it's very important we make sure we are ready to start pulling at 19:30 sharp.",
+    oppositeContent:
+      "Ideally, everyone is ready to be invited into the raid at least 10 minues before the raid starts, so that everything can be prepared.",
   },
   {
     id: "4",
-    title: "Maintain a monthly 80% attendance",
-    icon: <InterpreterModeIcon />,
-    secondTitle: "Because you need to be reliable!",
-    oppositeContent: "You can miss about 2 raids a month",
+    title: "Be Active",
+    icon: <PoolTwoToneIcon />,
+    secondTitle:
+      "Do the weekly stuff, keep up-to-date with everything that involves character progression. Play your character.",
+    oppositeContent:
+      "If you start to slack on the stuff you need to do to remain up-to-date, ask yourself if you really want to keep raiding. Logging in purely for the raid is not enough. Having mythic kills brings you no status in life. It's a game. So make sure you want to play it.",
   },
   {
     id: "5",
-    title: "Sleep, do other stuff, enjoy your life ",
-    icon: <HotelIcon />,
-    secondTitle: "Because everything should be taken in moderation!",
-    oppositeContent: "",
+    title: "Trade BoEs",
+    icon: <VolunteerActivismTwoToneIcon />,
+    secondTitle: "Mythic Dropped BoEs are meant to be traded to Putri.",
+    oppositeContent:
+      "You will get 50% of the gold it yields. Te other 50% will go to the guild bank, to fund consumables, which we provide to be able to progress as smoothly as possible.",
   },
   {
     id: "6",
-    title: "New week, repeat",
-    icon: <RepeatIcon />,
-    secondTitle: "Because this is the life you love!",
-    oppositeContent: "",
+    title: "Use Item Enhancements",
+    icon: <ConstructionTwoToneIcon />,
+    secondTitle: "This includes enchants, gems, pots, flasks, armor kits, etc.",
+    oppositeContent:
+      "Everything is provided by the guild. And if anything is missing and you are low on gold, you can ask an officer or any willing guild member to sort you out. Coming to a raid unprepared is unacceptable.",
+  },
+  {
+    id: "7",
+    title: "Maintain The Wishlist",
+    icon: <ConstructionTwoToneIcon />,
+    secondTitle: "This includes enchants, gems, pots, flasks, armor kits, etc.",
+    oppositeContent:
+      "Everything is provided by the guild. And if anything is missing and you are low on gold, you can ask an officer or any willing guild member to sort you out. Coming to a raid unprepared is unacceptable.",
   },
 ];
-
 export default raiderRequirementsContent;

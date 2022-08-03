@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "./raiderexpectations.scss";
+import "./raiderrequirements.scss";
 import { Typography } from "@mui/material";
 import {
   TimelineItem,
@@ -10,35 +10,39 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import raiderExpectationsContent from "../../models/raiderexpectations/RaiderExpectations.enum";
-import RaiderExpectationsImg from "../../assets/expectations.png";
+import raiderRequirementsContent from "../../models/raiderrequirements/RaiderRequirements.enum";
+import RaiderRequirementsImg from "../../assets/Requirements.png";
 
-const RaiderExpectationsTimeline: FC = () => {
+const RaiderRequirementsTimeline: FC = () => {
   return (
-    <div className="raider-expectations-body">
-      <img src={RaiderExpectationsImg} alt="expectations" />
+    <div className="raider-requirements-body">
+      <img
+        src={RaiderRequirementsImg}
+        alt="Requirements"
+        className="requirements-banner"
+      />
       <Timeline position="alternate">
-        {raiderExpectationsContent.map((expectations) => (
+        {raiderRequirementsContent.map((requirements) => (
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
               color="text.secondary">
-              {expectations.oppositeContent}
+              {requirements.oppositeContent}
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot color="warning" variant="outlined">
-                {expectations.icon}
+                {requirements.icon}
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
-                {expectations.title}
+                {requirements.title}
               </Typography>
-              <Typography>{expectations.secondTitle}</Typography>
+              <Typography>{requirements.secondTitle}</Typography>
             </TimelineContent>
           </TimelineItem>
         ))}
@@ -47,4 +51,4 @@ const RaiderExpectationsTimeline: FC = () => {
   );
 };
 
-export default RaiderExpectationsTimeline;
+export default RaiderRequirementsTimeline;

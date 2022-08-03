@@ -8,9 +8,11 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import EventRepeatIcon from "@mui/icons-material/EventRepeat";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import Layout from "../components/layout/Layout";
-import RaiderRequirementsTimeline from "../pages/raiderexpectations/RaiderExpectations";
+import RaiderRequirementsTimeline from "../pages/raiderrequirements/RaiderRequirements";
 import Events from "../pages/events/Events";
 import GuildBank from "../pages/guildbank/GuildBank";
+import RaiderExpectationsTimeline from "../pages/raiderexpectations/RaiderExpectations";
+import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 
 export interface RouteItem {
   key: string;
@@ -93,8 +95,16 @@ export const raiderRoutes: Array<RouteItem> = [
     key: "Expectations",
     path: "raiderExpectations",
     enabled: true,
-    component: <RaiderRequirementsTimeline />,
+    component: <RaiderExpectationsTimeline />,
     icon: <PeopleAltTwoToneIcon />,
-    description: "Raider Rules",
+    description: "Raider Expectations",
+  },
+  {
+    key: "Requirements",
+    path: "raiderRequirements",
+    enabled: true,
+    component: <RaiderRequirementsTimeline />,
+    icon: <BookmarkAddedIcon />,
+    description: "Raider Requirements",
   },
 ];
