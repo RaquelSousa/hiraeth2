@@ -1,42 +1,36 @@
-import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
-import AccessAlarmTwoToneIcon from "@mui/icons-material/AccessAlarmTwoTone";
-import PoolTwoToneIcon from "@mui/icons-material/PoolTwoTone";
-import VolunteerActivismTwoToneIcon from "@mui/icons-material/VolunteerActivismTwoTone";
-import ConstructionTwoToneIcon from "@mui/icons-material/ConstructionTwoTone";
-import PlaylistAddCheckCircleTwoToneIcon from "@mui/icons-material/PlaylistAddCheckCircleTwoTone";
-import MilitaryTechTwoToneIcon from "@mui/icons-material/MilitaryTechTwoTone";
-import NotListedLocationTwoToneIcon from "@mui/icons-material/NotListedLocationTwoTone";
-import FortTwoToneIcon from "@mui/icons-material/FortTwoTone";
-import RecordVoiceOverTwoToneIcon from "@mui/icons-material/RecordVoiceOverTwoTone";
+import RCLootCouncil from "../../assets/rclootcouncil.png";
+import Weakauras from "../../assets/weakauras2.png";
+import BigWigs from "../../assets/bigwigs.jpg";
+import MethodRaidTools from "../../assets/methodraidtools.png";
 
 const raiderAddonsContent = [
   {
     id: 0,
-    title: "DBM or BigWigs",
-    icon: <MarkEmailReadIcon />,
-    link1: "https://www.curseforge.com/wow/addons/deadly-boss-mods",
-    link2: "https://www.curseforge.com/wow/addons/big-wigs",
+    title: "BigWigs",
+    description: "Raid tactics helper. Deadly Boss Mods is an alternative",
+    icon: BigWigs,
+    link: "https://www.curseforge.com/wow/addons/big-wigs",
   },
   {
     id: 1,
-    title: "DBM or BigWigs",
-    icon: <MarkEmailReadIcon />,
-    link1: "https://www.curseforge.com/wow/addons/deadly-boss-mods",
-    link2: "https://www.curseforge.com/wow/addons/big-wigs",
+    title: "Method Raid Tools",
+    description: "The addon we use for healing cooldowns and notes",
+    icon: MethodRaidTools,
+    link: "https://www.curseforge.com/wow/addons/method-raid-tools",
   },
   {
     id: 2,
-    title: "DBM or BigWigs",
-    icon: <MarkEmailReadIcon />,
-    link1: "https://www.curseforge.com/wow/addons/deadly-boss-mods",
-    link2: "https://www.curseforge.com/wow/addons/big-wigs",
+    title: "RC Loot Council",
+    description: "Addon used to distribute loot during raids",
+    icon: RCLootCouncil,
+    link: "https://www.curseforge.com/wow/addons/rclootcouncil",
   },
   {
     id: 3,
-    title: "DBM or BigWigs",
-    icon: <MarkEmailReadIcon />,
-    link1: "https://www.curseforge.com/wow/addons/deadly-boss-mods",
-    link2: "https://www.curseforge.com/wow/addons/big-wigs",
+    title: "Weakauras",
+    description: "Certain strategies need weakauras to be followed",
+    icon: Weakauras,
+    link1: "https://www.curseforge.com/wow/addons/weakauras-2",
   },
 ];
 export default raiderAddonsContent;
