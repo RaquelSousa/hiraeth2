@@ -1,7 +1,7 @@
 import { FC } from "react";
 import "./codeofconducttiles.scss";
 import codeOfConductContent from "../../models/codeofconduct/CodeOfConduct.enum";
-import { Grid, Icon, Paper } from "@mui/material";
+import { Grid, Icon, Paper, Typography } from "@mui/material";
 
 const CodeOfConductTiles: FC = () => {
   return (
@@ -10,6 +10,9 @@ const CodeOfConductTiles: FC = () => {
         {codeOfConductContent.map((codeofconduct) => (
           <Grid item md={6}>
             <Paper className="paper">
+              <Typography variant="h6" component="span" color="error">
+                {codeofconduct.title}
+              </Typography>
               <Icon className="icon" color="warning">
                 {codeofconduct.icon}
               </Icon>

@@ -27,39 +27,51 @@ const Home: FC = () => {
           justifyContent="center"
           alignItems="center"
           className="guild-leadership">
-          <Typography variant="h6">
+          <Typography variant="h6" color="error">
             Kel
             <Avatar alt="Kel" src={WT} sx={{ width: 130, height: 130 }} />
-            <Typography variant="h6">GM/Healing</Typography>
+            <Typography variant="h6" color="#ffa726">
+              GM/Healing
+            </Typography>
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" color="error">
             Aideen
             <Avatar
               alt="Aideen"
               src={Lettuce}
               sx={{ width: 130, height: 130 }}
             />
-            <Typography variant="h6">Tech</Typography>
+            <Typography variant="h6" color="#ffa726">
+              Tech
+            </Typography>
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" color="error">
             Nubsva
             <Avatar alt="Nubsva" src={Dalek} sx={{ width: 130, height: 130 }} />
-            <Typography variant="h6">Recruitment</Typography>
+            <Typography variant="h6" color="#ffa726">
+              Recruitment
+            </Typography>
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" color="error">
             Myris
             <Avatar alt="Myris" src={Kuga} sx={{ width: 130, height: 130 }} />
-            <Typography variant="h6">Raid Strats</Typography>
+            <Typography variant="h6" color="#ffa726">
+              Raid Strats
+            </Typography>
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" color="error">
             Putri
             <Avatar alt="Putri" src={Putri} sx={{ width: 130, height: 130 }} />
-            <Typography variant="h6">Emo Treasury</Typography>
+            <Typography variant="h6" color="#ffa726">
+              Emo Treasury
+            </Typography>
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" color="error">
             Arrow
             <Avatar alt="Arrow" src={Arrow} sx={{ width: 130, height: 130 }} />
-            <Typography variant="h6">HR</Typography>
+            <Typography variant="h6" color="#ffa726">
+              HR
+            </Typography>
           </Typography>
         </Stack>
       </Stack>

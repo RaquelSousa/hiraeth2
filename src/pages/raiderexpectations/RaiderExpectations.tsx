@@ -35,7 +35,7 @@ const RaiderExpectationsTimeline: FC = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography variant="h6" component="span" color="error">
                 {expectations.title}
               </Typography>
               <Typography>{expectations.secondTitle}</Typography>

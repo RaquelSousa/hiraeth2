@@ -13,6 +13,8 @@ import Events from "../pages/events/Events";
 import GuildBank from "../pages/guildbank/GuildBank";
 import RaiderExpectationsTimeline from "../pages/raiderexpectations/RaiderExpectations";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
+import RaiderAddons from "../pages/raideraddons/RaiderAddons";
+import DownloadDoneTwoToneIcon from "@mui/icons-material/DownloadDoneTwoTone";
 
 export interface RouteItem {
   key: string;
@@ -106,5 +108,13 @@ export const raiderRoutes: Array<RouteItem> = [
     component: <RaiderRequirementsTimeline />,
     icon: <BookmarkAddedIcon />,
     description: "Raider Requirements",
+  },
+  {
+    key: "Required Addons",
+    path: "raiderrequiredaddons",
+    enabled: true,
+    component: <RaiderAddons />,
+    icon: <DownloadDoneTwoToneIcon />,
+    description: "Raider Required Addons",
   },
 ];
