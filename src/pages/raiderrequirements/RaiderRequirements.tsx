@@ -28,9 +28,7 @@ const RaiderRequirementsTimeline: FC = () => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="text.secondary">
-              {requirements.oppositeContent}
-            </TimelineOppositeContent>
+              color="text.secondary"></TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot color="warning" variant="outlined">
@@ -43,6 +41,9 @@ const RaiderRequirementsTimeline: FC = () => {
                 {requirements.title}
               </Typography>
               <Typography>{requirements.secondTitle}</Typography>
+              <Typography variant="body2" color="text.secondary">
+                {requirements.oppositeContent}
+              </Typography>
             </TimelineContent>
           </TimelineItem>
         ))}

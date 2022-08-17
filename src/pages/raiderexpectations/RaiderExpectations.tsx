@@ -24,9 +24,7 @@ const RaiderExpectationsTimeline: FC = () => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="text.secondary">
-              {expectations.oppositeContent}
-            </TimelineOppositeContent>
+              color="text.secondary"></TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot color="warning" variant="outlined">
@@ -39,6 +37,9 @@ const RaiderExpectationsTimeline: FC = () => {
                 {expectations.title}
               </Typography>
               <Typography>{expectations.secondTitle}</Typography>
+              <Typography variant="body2" color="text.secondary">
+                {expectations.oppositeContent}
+              </Typography>
             </TimelineContent>
           </TimelineItem>
         ))}

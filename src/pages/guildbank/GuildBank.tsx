@@ -72,7 +72,7 @@ const Events: FC = () => {
                     variant="body2"
                     color="text.secondary">
                     This is the first tab, with lots of stuff free for everyone,
-                    ranging from food to enchants, gear, ports, bags... Random
+                    ranging from food to enchants, gear, pots, bags... Random
                     stuff
                   </Typography>
                 </React.Fragment>
