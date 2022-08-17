@@ -62,10 +62,7 @@ const raiderRequirementsContent = [
       <Link
         component="button"
         variant="body2"
-        href="https://wowaudit.com/eu/draenor/hiraeth/main-raid/raids/wishlist"
-        onClick={() => {
-          console.info("I'm a button.");
-        }}>
+        href="https://wowaudit.com/eu/draenor/hiraeth/main-raid/raids/wishlist">
         Keep it up-to-date here.
       </Link>
     ),
