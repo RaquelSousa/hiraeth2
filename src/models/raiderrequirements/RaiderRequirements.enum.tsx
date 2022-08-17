@@ -8,6 +8,7 @@ import MilitaryTechTwoToneIcon from "@mui/icons-material/MilitaryTechTwoTone";
 import NotListedLocationTwoToneIcon from "@mui/icons-material/NotListedLocationTwoTone";
 import FortTwoToneIcon from "@mui/icons-material/FortTwoTone";
 import RecordVoiceOverTwoToneIcon from "@mui/icons-material/RecordVoiceOverTwoTone";
+import Link from "@mui/material/Link";
 
 const raiderRequirementsContent = [
   {
@@ -43,7 +44,7 @@ const raiderRequirementsContent = [
     icon: <VolunteerActivismTwoToneIcon />,
     secondTitle: "Mythic Dropped BoEs are meant to be traded to Putri.",
     oppositeContent:
-      "You will get 50% of the gold it yields. Te other 50% will go to the guild bank, to fund consumables, which we provide to be able to progress as smoothly as possible.",
+      "You will get 50% of the gold it yields. The other 50% will go to the guild bank, to fund consumables, which we provide to be able to progress as smoothly as possible.",
   },
   {
     id: "6",
@@ -57,9 +58,16 @@ const raiderRequirementsContent = [
     id: "7",
     title: "Maintain The Wishlist",
     icon: <PlaylistAddCheckCircleTwoToneIcon />,
-    secondTitle: "This includes enchants, gems, pots, flasks, armor kits, etc.",
+    secondTitle: (
+      <Link
+        component="button"
+        variant="body2"
+        href="https://wowaudit.com/eu/draenor/hiraeth/main-raid/raids/wishlist">
+        Keep it up-to-date here.
+      </Link>
+    ),
     oppositeContent:
-      "Everything is provided by the guild. And if anything is missing and you are low on gold, you can ask an officer or any willing guild member to sort you out. Coming to a raid unprepared is unacceptable.",
+      "This allows us to know who benefits more from each boss, and gauge when we can start extending.",
   },
   {
     id: "8",
@@ -86,7 +94,7 @@ const raiderRequirementsContent = [
     secondTitle:
       "Follow their directions, and be quiet when they are speaking on Discord. Do not monopolise Discord or inundate the RL with whispers about your brilliant strategy ideas during the raid.",
     oppositeContent:
-      "Feedback is welcome but make sure it's done in a orderly manner. If discussion is invited, then keep it brief and to the point. Preferably, major raid strategy discussion should be taken after the raid or on discord, outside of the heat of battle. Othewise 24 brilliant strategy ideas would bombar the Raid Leader senseless.",
+      "Feedback is welcome but make sure it's done in an orderly manner. If discussion is invited, then keep it brief and to the point. Preferably, major raid strategy discussion should be taken after the raid or on discord, outside of the heat of battle. Othewise 24 brilliant strategy ideas would bombard the Raid Leader senseless.",
   },
   {
     id: "11",
