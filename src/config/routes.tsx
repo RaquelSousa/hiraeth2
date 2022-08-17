@@ -15,6 +15,8 @@ import RaiderExpectationsTimeline from "../pages/raiderexpectations/RaiderExpect
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
 import RaiderAddons from "../pages/raideraddons/RaiderAddons";
 import DownloadDoneTwoToneIcon from "@mui/icons-material/DownloadDoneTwoTone";
+import Guidelines from "../pages/guidelines/Guidelines";
+import ListAltIcon from "@mui/icons-material/ListAlt";
 
 export interface RouteItem {
   key: string;
@@ -76,7 +78,7 @@ export const moduleRoutes: Array<RouteItem> = [
   },
   {
     key: "Guild Bank",
-    path: "guidBank",
+    path: "guildBank",
     enabled: true,
     component: <GuildBank />,
     icon: <AccountBalanceIcon />,
@@ -89,6 +91,14 @@ export const moduleRoutes: Array<RouteItem> = [
     component: <CodeOfConduct />,
     icon: <ConnectWithoutContactTwoToneIcon />,
     description: "Code of Conduct",
+  },
+  {
+    key: "Our Guidelines",
+    path: "guidelines",
+    enabled: true,
+    component: <Guidelines />,
+    icon: <ListAltIcon />,
+    description: "Our Guidelines",
   },
 ];
 
