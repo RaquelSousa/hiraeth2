@@ -26,7 +26,7 @@ const guidelines = [
     secondTitle:
       "At the end of the trial period, a decision will be made on whether the trial was successful or not.",
     oppositeContent:
-      "The possible outcomes are: Trial passed, promoted to Social or Raider; Trial failed, resulting in expulsion. Feedback provided; Trial extended due to lack of evidence, or second chance provided.",
+      "The possible outcomes are: Trial passed, promoted to Social or Raider; Trial failed, resulting in expulsion (Social) or demotion to Social (Raider). Feedback provided; Trial extended due to lack of evidence, or second chance provided.",
   },
 ];
 
