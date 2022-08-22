@@ -17,6 +17,8 @@ import RaiderAddons from "../pages/raideraddons/RaiderAddons";
 import DownloadDoneTwoToneIcon from "@mui/icons-material/DownloadDoneTwoTone";
 import Guidelines from "../pages/guidelines/Guidelines";
 import ListAltIcon from "@mui/icons-material/ListAlt";
+import LootProcess from "../pages/lootprocess/lootProcess";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
 export interface RouteItem {
   key: string;
@@ -126,5 +128,13 @@ export const raiderRoutes: Array<RouteItem> = [
     component: <RaiderAddons />,
     icon: <DownloadDoneTwoToneIcon />,
     description: "Raider Required Addons",
+  },
+  {
+    key: "Loot Process",
+    path: "lootProcess",
+    enabled: true,
+    component: <LootProcess />,
+    icon: <BusinessCenterIcon />,
+    description: "Loot Process",
   },
 ];

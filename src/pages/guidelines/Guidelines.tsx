@@ -33,7 +33,9 @@ const Guidelines: FC = () => {
           we're consistent, fair, and that everyone knows what we're expecting,
           and how we do things to manage the guild.
         </Typography>
-        <Typography variant="h3">Recruitment and Trial</Typography>
+        <Typography variant="h3" color="#ffa726">
+          Recruitment and Trial
+        </Typography>
         <Typography variant="h6">
           Note: Returning ex-members can skip any stage of this process at
           officers discretion.
@@ -83,7 +85,9 @@ const Guidelines: FC = () => {
             </TimelineItem>
           ))}
         </Timeline>
-        <Typography variant="h3">Alts</Typography>
+        <Typography variant="h3" color="#ffa726">
+          Alts
+        </Typography>
         <Typography variant="h6">
           These rules cover Alts. Guild Bank Access is explained within the
           Guild Ranks page.
@@ -99,7 +103,9 @@ const Guidelines: FC = () => {
           ))}
         </List>
 
-        <Typography variant="h3">Leaving Easy</Typography>
+        <Typography variant="h3" color="#ffa726">
+          Leaving Easy
+        </Typography>
         <List>
           {leavingEasy.map((record) => (
             <>

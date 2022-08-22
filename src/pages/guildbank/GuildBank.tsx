@@ -28,7 +28,9 @@ const Events: FC = () => {
           use common sense, don't just go and sell stuff for you own profit.
           This is for you to use, mains and alts alike.
         </Typography>
-        <Typography variant="h3">Short Version</Typography>
+        <Typography variant="h3" color="#ffa726">
+          Short Version
+        </Typography>
         <Stack spacing={1} alignItems="center">
           <Stack direction="row" spacing={1}>
             <Chip
@@ -45,10 +47,14 @@ const Events: FC = () => {
             />
           </Stack>
         </Stack>
-        <Typography variant="h3">Long Version</Typography>
+        <Typography variant="h3" color="#ffa726">
+          Long Version
+        </Typography>
         <List
           sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
-          <Typography variant="h5">First 3 tabs</Typography>
+          <Typography variant="h5" color="red">
+            First 3 tabs
+          </Typography>
           <Typography variant="h6">
             For everyone, Socials and Raiders alike!
           </Typography>
@@ -133,7 +139,9 @@ const Events: FC = () => {
         </List>
         <List
           sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
-          <Typography variant="h5">Last 2 tabs</Typography>
+          <Typography variant="h5" color="red">
+            Last 2 tabs
+          </Typography>
           <Typography variant="h6">For raiders</Typography>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
@@ -193,7 +201,9 @@ const Events: FC = () => {
         </List>
         <List
           sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
-          <Typography variant="h5">What about the other tabs?</Typography>
+          <Typography variant="h5" color="red">
+            What about the other tabs?
+          </Typography>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
               <Avatar
