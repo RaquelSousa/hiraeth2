@@ -12,6 +12,13 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import * as React from "react";
+import ConsumableMatsImg from "../../assets/consumable_mats.png";
+import CosmeticsImg from "../../assets/cosmetics.png";
+import FreeMaterialsImg from "../../assets/free_materials.png";
+import FreeRandomImg from "../../assets/free_random.png";
+import RaiderSuppliesImg from "../../assets/raider_supplies.png";
+import RaiderSupplies2Img from "../../assets/raider_supplies_2.png";
+import HiddenTabImg from "../../assets/hidden_tab.png";
 
 const Events: FC = () => {
   return (
@@ -62,7 +69,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Free Random"
-                src="/static/images/avatar/1.jpg"
+                src={FreeRandomImg}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>
@@ -90,7 +97,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Free Materials"
-                src="/static/images/avatar/2.jpg"
+                src={CosmeticsImg}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>
@@ -116,7 +123,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Cosmetics"
-                src="/static/images/avatar/3.jpg"
+                src={FreeMaterialsImg}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>
@@ -147,7 +154,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Raider Supplies"
-                src="/static/images/avatar/1.jpg"
+                src={RaiderSuppliesImg}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>
@@ -175,7 +182,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Raider Supplies 2"
-                src="/static/images/avatar/2.jpg"
+                src={RaiderSupplies2Img}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>
@@ -208,7 +215,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="Consumable Mats"
-                src="/static/images/avatar/1.jpg"
+                src={ConsumableMatsImg}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>
@@ -237,7 +244,7 @@ const Events: FC = () => {
             <ListItemAvatar>
               <Avatar
                 alt="There's a hidden tab..."
-                src="/static/images/avatar/2.jpg"
+                src={HiddenTabImg}
                 sx={{ width: 50, height: 50 }}
               />
             </ListItemAvatar>

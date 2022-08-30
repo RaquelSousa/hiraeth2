@@ -6,10 +6,10 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Dalek from "../../assets/dalek.jpg";
 import Arrow from "../../assets/arrow.jpg";
-import Lettuce from "../../assets/lettuce.jpg";
 import Putri from "../../assets/putri.jpg";
 import Kuga from "../../assets/kuga.jpg";
 import WT from "../../assets/wt.jpg";
+import Kion from "../../assets/kion.jpg";
 
 const Home: FC = () => {
   return (
@@ -28,7 +28,7 @@ const Home: FC = () => {
           alignItems="center"
           className="guild-leadership">
           <Typography variant="h6" color="error">
-            Kel
+            Denadel/Kel
             <Avatar alt="Kel" src={WT} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
               GM/Healing
@@ -36,11 +36,7 @@ const Home: FC = () => {
           </Typography>
           <Typography variant="h6" color="error">
             Aideen
-            <Avatar
-              alt="Aideen"
-              src={Lettuce}
-              sx={{ width: 130, height: 130 }}
-            />
+            <Avatar alt="Aideen" src={Kion} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
               Tech
             </Typography>
