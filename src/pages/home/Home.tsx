@@ -52,7 +52,7 @@ const Home: FC = () => {
             Myris
             <Avatar alt="Myris" src={Kuga} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              Raid Strats
+              Raid Leader
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
