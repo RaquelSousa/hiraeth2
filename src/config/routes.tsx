@@ -17,9 +17,11 @@ import RaiderAddons from "../pages/raideraddons/RaiderAddons";
 import DownloadDoneTwoToneIcon from "@mui/icons-material/DownloadDoneTwoTone";
 import Guidelines from "../pages/guidelines/Guidelines";
 import ListAltIcon from "@mui/icons-material/ListAlt";
-import LootProcess from "../pages/lootprocess/LootProcess";
+import LootProcess from "../pages/lootprocess/lootProcess";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
+import Ranks from "../pages/ranks/Ranks";
+import CampaignTwoToneIcon from "@mui/icons-material/CampaignTwoTone";
 
 export interface RouteItem {
   key: string;
@@ -51,6 +53,13 @@ export const ContainerRouter = () => (
         />
       ))}
       {raiderRoutes.map((route) => (
+        <Route
+          key={route.key}
+          path={`${route.path}`}
+          element={route.component}
+        />
+      ))}
+      {resourcesRoutes.map((route) => (
         <Route
           key={route.key}
           path={`${route.path}`}
@@ -107,7 +116,7 @@ export const moduleRoutes: Array<RouteItem> = [
     key: "Ranks",
     path: "ranks",
     enabled: true,
-    component: <ComingSoon />,
+    component: <Ranks />,
     icon: <StarOutlineIcon />,
     description: "Ranks",
   },
@@ -145,5 +154,16 @@ export const raiderRoutes: Array<RouteItem> = [
     component: <LootProcess />,
     icon: <BusinessCenterIcon />,
     description: "Loot Process",
+  },
+];
+
+export const resourcesRoutes: Array<RouteItem> = [
+  {
+    key: "Discords",
+    path: "discords",
+    enabled: true,
+    component: <ComingSoon />,
+    icon: <CampaignTwoToneIcon />,
+    description: "Useful Discords",
   },
 ];
