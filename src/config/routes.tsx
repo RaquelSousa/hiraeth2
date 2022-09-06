@@ -22,6 +22,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import Ranks from "../pages/ranks/Ranks";
 import CampaignTwoToneIcon from "@mui/icons-material/CampaignTwoTone";
+import Discords from "../pages/discords/Discords";
 
 export interface RouteItem {
   key: string;
@@ -162,7 +163,7 @@ export const resourcesRoutes: Array<RouteItem> = [
     key: "Discords",
     path: "discords",
     enabled: true,
-    component: <ComingSoon />,
+    component: <Discords />,
     icon: <CampaignTwoToneIcon />,
     description: "Useful Discords",
   },

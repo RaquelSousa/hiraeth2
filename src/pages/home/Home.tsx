@@ -10,6 +10,7 @@ import Putri from "../../assets/putri.jpg";
 import Kuga from "../../assets/kuga.jpg";
 import WT from "../../assets/wt.jpg";
 import Kion from "../../assets/kion.jpg";
+import Unicorn from "../../assets/unicorn.png";
 
 const Home: FC = () => {
   return (
@@ -31,7 +32,7 @@ const Home: FC = () => {
             Denadel/Kel
             <Avatar alt="Kel" src={WT} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              GM/Healing
+              Guild Master
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
@@ -59,7 +60,7 @@ const Home: FC = () => {
             Putri
             <Avatar alt="Putri" src={Putri} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              Emo Treasury
+              Treasury
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
@@ -69,6 +70,17 @@ const Home: FC = () => {
               HR
             </Typography>
           </Typography>
+          <Typography variant="h6" color="error">
+            Sumiltal
+            <Avatar
+              alt="Sumiltal"
+              src={Unicorn}
+              sx={{ width: 130, height: 130 }}
+            />
+            <Typography variant="h6" color="#ffa726">
+              Healing
+            </Typography>
+          </Typography>
         </Stack>
       </Stack>
       <br />
@@ -76,7 +88,7 @@ const Home: FC = () => {
         title="Hiraeth Discord"
         src="https://discord.com/widget?id=603232756868055050"
         width="400"
-        height="250"
+        height="300"
         allowTransparency={true}
         frameBorder="0"
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>

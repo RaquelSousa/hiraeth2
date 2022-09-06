@@ -6,10 +6,20 @@ import SportsMartialArtsTwoToneIcon from "@mui/icons-material/SportsMartialArtsT
 import LocalPoliceTwoToneIcon from "@mui/icons-material/LocalPoliceTwoTone";
 import AltRouteTwoToneIcon from "@mui/icons-material/AltRouteTwoTone";
 import EventSeatTwoToneIcon from "@mui/icons-material/EventSeatTwoTone";
+import WcTwoToneIcon from "@mui/icons-material/WcTwoTone";
 
 export const ranksContent = [
   {
     id: "0",
+    title: "Toilet",
+    colour: "#ffffff",
+    content:
+      "When someone missbehaves, this rank is summoned temporarily. Mostly used for comedy.",
+    icon: <WcTwoToneIcon />,
+    details: "No benefits.",
+  },
+  {
+    id: "1",
     title: "Social Trial",
     colour: "#00ffd9",
     content:
@@ -18,7 +28,7 @@ export const ranksContent = [
     details: "No benefits.",
   },
   {
-    id: "1",
+    id: "2",
     title: "Alt",
     colour: "#ffffff",
     content: "An alt character from a Raider or Social member.",
@@ -27,9 +37,9 @@ export const ranksContent = [
       "Benefits include the right to wirthdraw from Free Random and Free Materials tabs.",
   },
   {
-    id: "2",
+    id: "3",
     title: "Social",
-    colour: "#00ff33",
+    colour: "#03fc7b",
     content:
       "A regular member, not part of raiding team. The expectations vary but in general the rules and code of conduct must be observed by all members. ",
     icon: <GroupsTwoToneIcon />,
@@ -37,7 +47,7 @@ export const ranksContent = [
       "Benefits include 100g daily repairs, and the right to withdraw from Free Random, Free Materias and Cosmetics tabs.",
   },
   {
-    id: "3",
+    id: "4",
     title: "Raid Trial AKA Trial",
     colour: "#4287f5",
     content:
@@ -47,7 +57,7 @@ export const ranksContent = [
       "Benefits include 200g daily repairs, and the right to withdraw from Free Random, Free Materias, Cosmetics, Raider supplies and Raider Supplies2 tabs.",
   },
   {
-    id: "4",
+    id: "5",
     title: "Raider",
     colour: "#ffc400",
     content: "A member that is part of the raiding team.",
@@ -56,7 +66,7 @@ export const ranksContent = [
       "Benefits include 300g daily repairs, and the right to withdraw extra stacks from Free Random, Free Materias, Cosmetics, Raider Supplies and Raider Supplies2 tabs.",
   },
   {
-    id: "5",
+    id: "6",
     title: "Officer Alt",
     colour: "#ffffff",
     content:
@@ -66,7 +76,7 @@ export const ranksContent = [
       "Benefits exclude Guild Repairs. Include Guild invites, and the right to withdraw from all tabs in limited amounts.",
   },
   {
-    id: "6",
+    id: "7",
     title: "Officer",
     colour: "#ff5900",
     content: "The guild staff. Raid leader and Officers all included.",
@@ -75,7 +85,7 @@ export const ranksContent = [
       "Benefits exclude Guild Repairs. Include Guild invites, and the right to withdraw unlimited stacks from all tabs. Right to withdraw gold.",
   },
   {
-    id: "7",
+    id: "8",
     title: "Lion Queen AKA GM",
     colour: "#ff0000",
     content: "The GM. Unlimited access.",
