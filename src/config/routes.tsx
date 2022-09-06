@@ -17,11 +17,12 @@ import RaiderAddons from "../pages/raideraddons/RaiderAddons";
 import DownloadDoneTwoToneIcon from "@mui/icons-material/DownloadDoneTwoTone";
 import Guidelines from "../pages/guidelines/Guidelines";
 import ListAltIcon from "@mui/icons-material/ListAlt";
-import LootProcess from "../pages/lootprocess/lootProcess";
+import LootProcess from "../pages/lootprocess/LootProcess";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import Ranks from "../pages/ranks/Ranks";
 import CampaignTwoToneIcon from "@mui/icons-material/CampaignTwoTone";
+import Discords from "../pages/discords/Discords";
 
 export interface RouteItem {
   key: string;

@@ -10,7 +10,7 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import lootProcess from "../../models/lootprocess/lootProcess.enum";
+import LootProcessList from "../../models/lootprocess/LootProcess.enum";
 import LootImg from "../../assets/loot.png";
 
 const LootProcess: FC = () => {
@@ -23,7 +23,7 @@ const LootProcess: FC = () => {
           flawless.
         </Typography>
         <Timeline position="alternate">
-          {lootProcess.map((record) => (
+          {LootProcessList.map((record) => (
             <TimelineItem>
               <TimelineOppositeContent
                 sx={{ m: "auto 0" }}

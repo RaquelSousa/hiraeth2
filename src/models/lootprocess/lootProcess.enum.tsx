@@ -1,7 +1,7 @@
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import SwitchAccessShortcutAddIcon from "@mui/icons-material/SwitchAccessShortcutAdd";
 
-const leavingEasy = [
+const LootProcessList = [
   {
     id: "0",
     title: "BoPs",
@@ -21,4 +21,4 @@ const leavingEasy = [
   },
 ];
 
-export default leavingEasy;
+export default LootProcessList;
