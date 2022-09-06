@@ -163,7 +163,7 @@ export const resourcesRoutes: Array<RouteItem> = [
     key: "Discords",
     path: "discords",
     enabled: true,
-    component: <Discords />,
+    component: <ComingSoon />,
     icon: <CampaignTwoToneIcon />,
     description: "Useful Discords",
   },
