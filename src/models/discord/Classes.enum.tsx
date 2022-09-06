@@ -7,63 +7,84 @@ import BathtubTwoToneIcon from "@mui/icons-material/BathtubTwoTone";
 import HighlightOffTwoToneIcon from "@mui/icons-material/HighlightOffTwoTone";
 import AccessibleForwardTwoToneIcon from "@mui/icons-material/AccessibleForwardTwoTone";
 
-const DiscordContent = [
+const ClassDiscords = [
   {
     id: "0",
-    title: "Respect Others, Be Respected",
+    title: "Hunter",
     content:
       "Treat all other players with dignity and respect. This includes both inside and outside of the guild. Even friends of Guildies in Discord.",
     icon: <ThumbsUpDownTwoToneIcon />,
   },
   {
     id: "1",
-    title: "We All Play to Have Fun",
+    title: "Priest",
     content:
       "Don't ruin it for other people. It is you, and not the Guild Leadership, who is primarily responsible for whether you are having fun or not.",
     icon: <SentimentVerySatisfiedTwoTone />,
   },
   {
     id: "2",
-    title: "You Are Part of a Community",
+    title: "Paladin",
     content:
       "We succeed as a group, not as individuals. Self-centred and self-absorbed attitudes are not helpful. Help and be helped.",
     icon: <PeopleTwoToneIcon />,
   },
   {
     id: "3",
-    title: "Not Everyone Will Get Along",
+    title: "Rogue",
     content:
       "Conflict will inevitably arise. Members should try to resolve it civilly and privately. Approach an Officer for assistance if needed.",
     icon: <EmojiPeopleTwoToneIcon />,
   },
   {
     id: "4",
-    title: "Read the Discord Announcements",
+    title: "Warrior",
     content:
       "Discord is the main way of communicating guild information. It's your responsibility to check these channels when pinged, and remain up-to-date.",
     icon: <MenuBookTwoToneIcon />,
   },
   {
     id: "5",
-    title: "Do Not Taint Our Name",
+    title: "Shaman",
     content:
       "Behaviours such as spamming, trolling, ninjaing, begging, flaming, or other anti-social actions are not acceptable, regardless of where you are.",
     icon: <BathtubTwoToneIcon />,
   },
   {
     id: "6",
-    title: "Avoid Excessive Explicit Language",
+    title: "Demon Hunter",
     content:
       "Justifiable mature language is acceptable. Explicit language is discouraged, but not banned. However respect towards others is required.",
     icon: <HighlightOffTwoToneIcon />,
   },
   {
     id: "7",
-    title: "Not All Jokes Are Acceptable",
+    title: "Death Knight",
+    content:
+      "Malicious, hostile, abusive, threatening, discriminatory, or prejudicial behaviour of any form is expressly forbidden and will be met with immediate expulsion.",
+    icon: <AccessibleForwardTwoToneIcon />,
+  },
+  {
+    id: "8",
+    title: "Mage",
+    content:
+      "Malicious, hostile, abusive, threatening, discriminatory, or prejudicial behaviour of any form is expressly forbidden and will be met with immediate expulsion.",
+    icon: <AccessibleForwardTwoToneIcon />,
+  },
+  {
+    id: "9",
+    title: "Warlock",
+    content:
+      "Malicious, hostile, abusive, threatening, discriminatory, or prejudicial behaviour of any form is expressly forbidden and will be met with immediate expulsion.",
+    icon: <AccessibleForwardTwoToneIcon />,
+  },
+  {
+    id: "10",
+    title: "Druid",
     content:
       "Malicious, hostile, abusive, threatening, discriminatory, or prejudicial behaviour of any form is expressly forbidden and will be met with immediate expulsion.",
     icon: <AccessibleForwardTwoToneIcon />,
   },
 ];
 
-export default DiscordContent;
+export default ClassDiscords;
