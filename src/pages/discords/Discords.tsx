@@ -14,6 +14,9 @@ const Discords: FC = () => {
         <Typography className="description" variant="h6">
           Here is a list of all discords we find useful.
         </Typography>
+        <Typography variant="h3" color="#ffa726">
+          Class Discords
+        </Typography>
         <DiscordTiles />
       </Stack>
     </Stack>
