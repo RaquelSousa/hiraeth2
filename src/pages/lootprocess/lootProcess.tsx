@@ -10,7 +10,7 @@ import {
   TimelineDot,
   TimelineContent,
 } from "@mui/lab";
-import LootProcessList from "../../models/lootprocess/LootProcess.enum";
+import LootProcessList from "../../models/lootprocess/lootProcess.enum";
 import LootImg from "../../assets/loot.png";
 
 const LootProcess: FC = () => {
