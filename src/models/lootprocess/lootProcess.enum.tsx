@@ -4,10 +4,10 @@ import SwitchAccessShortcutAddIcon from "@mui/icons-material/SwitchAccessShortcu
 const LootProcessList = [
   {
     id: "0",
-    title: "BoPs",
+    title: "Raid Drops",
     icon: <FastfoodIcon />,
     secondTitle:
-      "All loot is personal Boss loot to do with as you please. But we do ask to keep main specs in mind. When players want unwanted loot items to be distributed, they should say so within the RC Loot Council addon prompt.",
+      "All loot is to be passed on then distributed by the officer team using RC Loot Council",
     oppositeContent: "",
   },
   {

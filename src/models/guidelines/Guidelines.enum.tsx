@@ -1,6 +1,7 @@
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import AddTaskIcon from "@mui/icons-material/AddTask";
 import SwitchAccessShortcutAddIcon from "@mui/icons-material/SwitchAccessShortcutAdd";
+import { Link } from "@mui/material";
 
 const guidelines = [
   {
@@ -9,7 +10,15 @@ const guidelines = [
     icon: <FastfoodIcon />,
     secondTitle:
       "Prospective applicants complete their application form on the website. ",
-    oppositeContent: "",
+    oppositeContent: (
+      <Link
+        variant="body2"
+        target="_blank"
+        rel="noopener"
+        href="https://guildsofwow.com/hiraeth/recruitment/">
+        You can apply here.
+      </Link>
+    ),
   },
   {
     id: "1",
