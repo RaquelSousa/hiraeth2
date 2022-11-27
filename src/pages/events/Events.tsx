@@ -12,7 +12,7 @@ const Events: FC = () => {
         <img src={EventsImg} alt="Events" className="events-banner" />
         <img src={MainRaidsImg} alt="Events" className="main-raids-banner" />
         <Typography variant="h6" color="#ffa726">
-          Mondays and Thursdays - 19:30 - 22:30
+          Mondays and Thursdays - 19:20 - 22:30
         </Typography>
         <img
           src={SocialRaidsImg}
