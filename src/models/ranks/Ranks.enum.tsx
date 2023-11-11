@@ -14,7 +14,7 @@ export const ranksContent = [
     title: "Toilet",
     colour: "#ffffff",
     content:
-      "When someone missbehaves, this rank is summoned temporarily. Mostly used for comedy.",
+      "When someone missbehaves, this rank is summoned temporarily. Mostly used for comedy. Won't be able to write in guild chat.",
     icon: <WcTwoToneIcon />,
     details: "No benefits.",
   },
@@ -48,7 +48,7 @@ export const ranksContent = [
   },
   {
     id: "4",
-    title: "Raid Trial AKA Trial",
+    title: "Raider Trial AKA Trial",
     colour: "#4287f5",
     content:
       "Specifically assigned to raiders just joined and are undergoing a 2 week/4 raid trial period.",
@@ -58,6 +58,16 @@ export const ranksContent = [
   },
   {
     id: "5",
+    title: "Raider Alt",
+    colour: "#ffffff",
+    content:
+      "Specifically assigned to raider alts approved to join main raids.",
+    icon: <EscalatorWarningTwoToneIcon />,
+    details:
+      "Benefits include 250g daily repairs, and the right to withdraw from Free Random, Free Materias, Cosmetics, Raider supplies and Raider Supplies2 tabs.",
+  },
+  {
+    id: "6",
     title: "Raider",
     colour: "#ffc400",
     content: "A member that is part of the raiding team.",
@@ -66,8 +76,8 @@ export const ranksContent = [
       "Benefits include 300g daily repairs, and the right to withdraw extra stacks from Free Random, Free Materias, Cosmetics, Raider Supplies and Raider Supplies2 tabs.",
   },
   {
-    id: "6",
-    title: "Officer Alt",
+    id: "7",
+    title: "Queensquad Alts AKA Officer Alts",
     colour: "#ffffff",
     content:
       "Officers' alt characters. With the purpose of still being able to craft stuff on these alts for the guild bank, and access guild management options and read/write in officer chat.",
@@ -76,8 +86,8 @@ export const ranksContent = [
       "Benefits exclude Guild Repairs. Include Guild invites, and the right to withdraw from all tabs in limited amounts.",
   },
   {
-    id: "7",
-    title: "Officer",
+    id: "8",
+    title: "Queensquad AKA Officers",
     colour: "#ff5900",
     content: "The guild staff. Raid leader and Officers all included.",
     icon: <LocalPoliceTwoToneIcon />,
@@ -85,10 +95,10 @@ export const ranksContent = [
       "Benefits exclude Guild Repairs. Include Guild invites, and the right to withdraw unlimited stacks from all tabs. Right to withdraw gold.",
   },
   {
-    id: "8",
+    id: "9",
     title: "Lion Queen AKA GM",
     colour: "#ff0000",
-    content: "The GM. Unlimited access.",
+    content: "The GM. Unlimited POWAAAAA.",
     icon: <EventSeatTwoToneIcon />,
     details: "",
   },
