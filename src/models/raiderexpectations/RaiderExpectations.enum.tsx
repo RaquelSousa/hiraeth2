@@ -9,7 +9,7 @@ import HotelIcon from "@mui/icons-material/Hotel";
 const raiderExpectationsContent = [
   {
     id: "0",
-    title: "Do 4x M+15 a week",
+    title: "Do 4x M+18 a week",
     icon: <FastfoodIcon />,
     secondTitle: "Because you need new clothes!",
     oppositeContent: "There's a M+ event on Tuesdays if you need help",
@@ -19,7 +19,8 @@ const raiderExpectationsContent = [
     title: "Update your attendance accordingly in the discord bot",
     icon: <AddTaskIcon />,
     secondTitle: "Because we need to plan ahead!",
-    oppositeContent: "You will get tagged when the bot goes up, make sure you update it if needed",
+    oppositeContent:
+      "You will get tagged when the bot goes up, make sure you update it if needed",
   },
   {
     id: "2",

@@ -8,6 +8,8 @@ import MilitaryTechTwoToneIcon from "@mui/icons-material/MilitaryTechTwoTone";
 import NotListedLocationTwoToneIcon from "@mui/icons-material/NotListedLocationTwoTone";
 import FortTwoToneIcon from "@mui/icons-material/FortTwoTone";
 import RecordVoiceOverTwoToneIcon from "@mui/icons-material/RecordVoiceOverTwoTone";
+import LocalFireDepartmentTwoToneIcon from "@mui/icons-material/LocalFireDepartmentTwoTone";
+import DirectionsRunTwoToneIcon from "@mui/icons-material/DirectionsRunTwoTone";
 import Link from "@mui/material/Link";
 
 const raiderRequirementsContent = [
@@ -44,7 +46,7 @@ const raiderRequirementsContent = [
     icon: <VolunteerActivismTwoToneIcon />,
     secondTitle: "Mythic Dropped BoEs are meant to be traded to Putri.",
     oppositeContent:
-      "You will get 50% of the gold it yields. The other 50% will go to the guild bank, to fund consumables, which we provide to be able to progress as smoothly as possible.",
+      "You will get 50% of the gold it yields. The other 50% will go to the guild bank, to fund consumables, which we provide to be able to progress as smoothly as possible. If ",
   },
   {
     id: "4",
@@ -63,7 +65,8 @@ const raiderRequirementsContent = [
         variant="body2"
         target="_blank"
         rel="noopener"
-        href="https://wowaudit.com/eu/draenor/hiraeth/main-raid/wishlists/personal">
+        href="https://wowaudit.com/eu/draenor/hiraeth/main-raid/wishlists/personal"
+      >
         Keep it up-to-date here.
       </Link>
     ),
@@ -105,6 +108,22 @@ const raiderRequirementsContent = [
       "Members should feel free to give advice and suggestions to other players to improve their play.",
     oppositeContent:
       "Equally, Members should view any positive criticism as an opportunity to improve.",
+  },
+  {
+    id: "10",
+    title: "Don't Burn Out",
+    icon: <LocalFireDepartmentTwoToneIcon />,
+    secondTitle: "If you burn out, it's your fault.",
+    oppositeContent:
+      "If you wanna push M+, pug on your alts, join all guild events (even optional ones), boost, farm transmogs or mounts, that's completely fine. This is a game, meant to be enjoyed however you'd like. But if any of this causes you to burn out and quit playing before the tier ends, you are essentially letting your team down. You have wasted everyone's time. Please know your limits.",
+  },
+  {
+    id: "11",
+    title: "Don't Just Abandon Ship",
+    icon: <DirectionsRunTwoToneIcon />,
+    secondTitle: "If you leave us mid tier, you lose our trust.",
+    oppositeContent:
+      "Everyone has extremely valid reasons for wanting to quit the game, that are not related to burning out. However, if in the middle of the tier you suddenly quit without notice, and fail to give a good justification, we will be forced to not allow you to join again at the start of the next tier. Our trust in you will not be the same. Our consideration to give you loot or a spot over someone else will also not be the same. We cannot risk getting to the harder bosses and losing core players which will might set us back for several raids. If you have an issue with the way thing are run, or how other players play, it is advised to reach one of the officers about it. Maybe you are jumping ship because you are tired of Player A afking constantly. But maybe Player A has a very good reason for it, and this guild doesn't punish people for IRL issues. We are not gonna take away enjoyment, or an escape, from someone, because someone else doesn't like it. By quitting you might be causing a bigger issue for 20+ other people, than the one you are frustrated about. Either you give us a chance to explain that, or this guild isn't for you.",
   },
 ];
 export default raiderRequirementsContent;

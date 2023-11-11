@@ -8,7 +8,8 @@ const LootProcessList = [
     icon: <FastfoodIcon />,
     secondTitle:
       "All loot is to be passed on then distributed by the officer team using RC Loot Council",
-    oppositeContent: "",
+    oppositeContent:
+      "We base our decision on the wishlist each player creates and keeps up to date in WoWAudit, but also in player's reliability.",
   },
   {
     id: "1",

@@ -27,12 +27,13 @@ const Home: FC = () => {
           spacing={2}
           justifyContent="center"
           alignItems="center"
-          className="guild-leadership">
+          className="guild-leadership"
+        >
           <Typography variant="h6" color="error">
             Denadel/Kel
             <Avatar alt="Kel" src={WT} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              Guild Master
+              GM/Raid Leader
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
@@ -53,7 +54,7 @@ const Home: FC = () => {
             Myris
             <Avatar alt="Myris" src={Kuga} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              Raid Leader
+              Co Raid Leader
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
@@ -91,7 +92,8 @@ const Home: FC = () => {
         height="300"
         allowTransparency={true}
         frameBorder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
     </Stack>
   );
 };
