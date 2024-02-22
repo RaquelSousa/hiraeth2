@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./raiderexpectations.scss";
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import {
   TimelineItem,
   Timeline,
@@ -11,40 +11,47 @@ import {
   TimelineContent,
 } from "@mui/lab";
 import raiderExpectationsContent from "../../models/raiderexpectations/RaiderExpectations.enum";
-import RaiderExpectationsImg from "../../assets/expectations.png";
+import Title from "../../components/title/Title";
 
 const RaiderExpectationsTimeline: FC = () => {
   return (
-    <div className="raider-expectations-body">
-      <img src={RaiderExpectationsImg} alt="expectations" />
-      <Timeline position="alternate">
-        {raiderExpectationsContent.map((expectations) => (
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-              color="text.secondary"></TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot color="warning" variant="outlined">
-                {expectations.icon}
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span" color="error">
-                {expectations.title}
-              </Typography>
-              <Typography>{expectations.secondTitle}</Typography>
-              <Typography variant="body2" color="text.secondary">
-                {expectations.oppositeContent}
-              </Typography>
-            </TimelineContent>
-          </TimelineItem>
-        ))}
-      </Timeline>
-    </div>
+    <Stack direction="column" justifyContent="center" alignItems="center">
+      <Stack
+        spacing={2}
+        direction="column"
+        className="raider-expectations-body"
+      >
+        <Title label="Expectations" />
+        <Timeline position="alternate">
+          {raiderExpectationsContent.map((expectations) => (
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+                color="text.secondary"
+              ></TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot color="warning" variant="outlined">
+                  {expectations.icon}
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span" color="error">
+                  {expectations.title}
+                </Typography>
+                <Typography>{expectations.secondTitle}</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {expectations.oppositeContent}
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </Stack>
+    </Stack>
   );
 };
 

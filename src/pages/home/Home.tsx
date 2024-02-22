@@ -1,7 +1,6 @@
 import { FC } from "react";
 import "./home.scss";
 import { Typography } from "@mui/material";
-import GuildLeadershipImg from "../../assets/guild_leadership.png";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Dalek from "../../assets/dalek.jpg";
@@ -11,17 +10,18 @@ import Kuga from "../../assets/kuga.jpg";
 import WT from "../../assets/wt.jpg";
 import Kion from "../../assets/kion.jpg";
 import Unicorn from "../../assets/unicorn.png";
+import Title from "../../components/title/Title";
 
 const Home: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={4} direction="column" className="body">
+      <Stack spacing={4} direction="column" className="home-body">
         <Typography variant="h6" align="center">
           This is an information website, to direct current and new guildies to
           what they need to know related to the guild. The main goal of this
           website is to clear out some Discord channels.
         </Typography>
-        <img src={GuildLeadershipImg} alt="Guild Leadership" />
+        <Title label="Guild Staff" />
         <Stack
           direction="row"
           spacing={2}
@@ -30,10 +30,10 @@ const Home: FC = () => {
           className="guild-leadership"
         >
           <Typography variant="h6" color="error">
-            Denadel/Kel
-            <Avatar alt="Kel" src={WT} sx={{ width: 130, height: 130 }} />
+            Nubsva
+            <Avatar alt="Nubsva" src={Dalek} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              GM/Raid Leader
+              GM/Recruitment
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
@@ -44,10 +44,10 @@ const Home: FC = () => {
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">
-            Nubsva
-            <Avatar alt="Nubsva" src={Dalek} sx={{ width: 130, height: 130 }} />
+            Denadel/Kel
+            <Avatar alt="Kel" src={WT} sx={{ width: 130, height: 130 }} />
             <Typography variant="h6" color="#ffa726">
-              Recruitment
+              Raid Leader
             </Typography>
           </Typography>
           <Typography variant="h6" color="error">

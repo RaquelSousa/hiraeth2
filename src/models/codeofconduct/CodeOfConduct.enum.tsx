@@ -26,7 +26,7 @@ const codeOfConductContent = [
     id: "2",
     title: "You Are Part of a Community",
     content:
-      "We succeed as a group, not as individuals. Self-centred and self-absorbed attitudes are not helpful. Help and be helped.",
+      "We succeed as a group, not as individuals. Self-centred and self-absorbed attitudes are not helpful. Help and be helped, and bonds will be formed!",
     icon: <PeopleTwoToneIcon />,
   },
   {

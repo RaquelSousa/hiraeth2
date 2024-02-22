@@ -13,16 +13,17 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import MandatoryAddonsImg from "../../assets/mandatory_addons.png";
 import raiderAddonsContent from "../../models/raideraddons/RaiderAddons.enum";
+import Title from "../../components/title/Title";
 
 const RaiderAddons: FC = () => {
   const [selectedIndex] = React.useState(1);
 
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <img src={MandatoryAddonsImg} alt="mandatory addons" />
+      <Stack spacing={2} direction="column" className="raider-addons-body">
+        <Title label="Required Addons" />
+        <br />
         <Typography className="description" variant="h6">
           As a raider you are expected to have the following addons installed
           and enabled
@@ -35,7 +36,8 @@ const RaiderAddons: FC = () => {
               </ListItemAvatar>
               <ListItemText
                 primary={<Chip label={addons.title} color="warning" />}
-                secondary={addons.description}></ListItemText>
+                secondary={addons.description}
+              ></ListItemText>
               <ListItemButton selected={selectedIndex === 0}>
                 <Button variant="contained" color="error" href={addons.link}>
                   Download

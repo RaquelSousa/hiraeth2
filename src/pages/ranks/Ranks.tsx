@@ -1,13 +1,6 @@
 import { FC } from "react";
 import "./ranks.scss";
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import {
   TimelineItem,
   Timeline,
@@ -18,13 +11,13 @@ import {
   TimelineContent,
 } from "@mui/lab";
 import { ranksContent } from "../../models/ranks/Ranks.enum";
-import RanksImg from "../../assets/ranks.png";
+import Title from "../../components/title/Title";
 
 const Ranks: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <img src={RanksImg} alt="Events" className="guidelines-banner" />
+      <Stack spacing={2} direction="column" className="ranks-body">
+        <Title label="Ranks" />
         <Typography variant="h6">
           Rank structure in Hiraeth aims to promote and reward individuals that
           dedicate time towards improving the guild and creating a better
@@ -37,7 +30,8 @@ const Ranks: FC = () => {
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
-                color={record.colour}></TimelineOppositeContent>
+                color={record.colour}
+              ></TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot color="warning" variant="outlined">

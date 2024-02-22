@@ -77,7 +77,7 @@ export const ranksContent = [
   },
   {
     id: "7",
-    title: "Queensquad Alts AKA Officer Alts",
+    title: "Kittysquad Alts AKA Officer Alts",
     colour: "#ffffff",
     content:
       "Officers' alt characters. With the purpose of still being able to craft stuff on these alts for the guild bank, and access guild management options and read/write in officer chat.",
@@ -87,7 +87,7 @@ export const ranksContent = [
   },
   {
     id: "8",
-    title: "Queensquad AKA Officers",
+    title: "Kittysquad AKA Officers",
     colour: "#ff5900",
     content: "The guild staff. Raid leader and Officers all included.",
     icon: <LocalPoliceTwoToneIcon />,
@@ -96,7 +96,7 @@ export const ranksContent = [
   },
   {
     id: "9",
-    title: "Lion Queen AKA GM",
+    title: "Cat Dad AKA GM",
     colour: "#ff0000",
     content: "The GM. Unlimited POWAAAAA.",
     icon: <EventSeatTwoToneIcon />,
