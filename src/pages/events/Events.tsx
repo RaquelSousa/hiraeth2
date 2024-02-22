@@ -1,30 +1,24 @@
 import { Divider, Stack, Typography } from "@mui/material";
 import { FC } from "react";
 import "./events.scss";
-import EventsImg from "../../assets/events.png";
-import MainRaidsImg from "../../assets/main_raids.png";
-import SocialRaidsImg from "../../assets/social_events2.png";
+import Title from "../../components/title/Title";
 
 const Events: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <img src={EventsImg} alt="Events" className="events-banner" />
-        <img src={MainRaidsImg} alt="Events" className="main-raids-banner" />
+      <Stack spacing={2} direction="column" className="events-body">
+        <Title label="Events" />
+        <br />
         <Typography variant="h5">
-          Progression Raids, People with Raider Rank only
+          Progression Raids - People with Raider Rank only
         </Typography>
         <Typography variant="h6" color="#ffa726">
           Mondays and Thursdays - 19:20 - 22:30
         </Typography>
-        <img
-          src={SocialRaidsImg}
-          alt="Events"
-          className="social-raids-banner"
-        />
+        <br />
         <Typography variant="h5">
-          Fun events for anyone to join! Bridge the gap between raiders and
-          Socials
+          Social Events - Fun events for anyone to join! Bridge the gap between
+          raiders and Socials
         </Typography>
         <Stack direction="row" justifyContent="center" alignItems="center">
           <Stack sx={{ width: "500px" }}>

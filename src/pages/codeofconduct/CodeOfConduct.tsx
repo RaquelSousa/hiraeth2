@@ -2,15 +2,13 @@ import { Stack, Typography } from "@mui/material";
 import { FC } from "react";
 import CodeOfConductTiles from "../../components/codeofconduct/CodeOfConductTiles";
 import "./codeofconduct.scss";
-import CodeOfConductImg from "../../assets/code_of_conduct.png";
+import Title from "../../components/title/Title";
 
 const CodeOfConduct: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <div className="code-of-conduct-banner">
-          <img src={CodeOfConductImg} alt="Code of Conduct" />
-        </div>
+      <Stack spacing={2} direction="column" className="codeofconduct-body">
+        <Title label="Code of Conduct" />
         <Typography className="description" variant="h6">
           To make sure we maintain a healthy and welcoming environment, we need
           to make sure we keep certain common sense guidelines in mind.

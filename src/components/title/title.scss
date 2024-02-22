@@ -1,0 +1,27 @@
+.title {
+  line-height: 0.5;
+  text-align: center;
+
+  .line {
+    display: inline-block;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid rgb(255, 0, 0);
+      border-top: 0px solid rgb(255, 0, 0);
+      top: 50%;
+      width: 100px;
+    }
+    &:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+  }
+}

@@ -1,7 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import { FC } from "react";
 import "./guildbank.scss";
-import GuildBankImg from "../../assets/guild_bank.png";
 import Chip from "@mui/material/Chip";
 import GroupsIcon from "@mui/icons-material/Groups";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
@@ -19,20 +18,21 @@ import FreeRandomImg from "../../assets/free_random.png";
 import RaiderSuppliesImg from "../../assets/raider_supplies.png";
 import RaiderSupplies2Img from "../../assets/raider_supplies_2.png";
 import HiddenTabImg from "../../assets/hidden_tab.png";
+import Title from "../../components/title/Title";
 
 const Events: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <img src={GuildBankImg} alt="Events" className="guildbank-banner" />
+      <Stack spacing={2} direction="column" className="guildbank-body">
+        <Title label="Guild Bank" />
         <Typography variant="h6">
           The general rule of thumb is: if you can take it out of the guild
-          bank, you are allowed to do so for free.
+          bank, you are more than welcome to do so.{" "}
         </Typography>
         <Typography variant="h6">
           We are here to support each other and we are not using the guild bank
           for storage purposes, but rather for sharing purposes. However, please
-          use common sense, don't just go and sell stuff for you own profit.
+          use common sense, don't just go and sell stuff for your own profit.
           This is for you to use, mains and alts alike.
         </Typography>
         <Typography variant="h3" color="#ffa726">
@@ -58,7 +58,8 @@ const Events: FC = () => {
           Long Version
         </Typography>
         <List
-          sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
+          sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}
+        >
           <Typography variant="h5" color="red">
             First 3 tabs
           </Typography>
@@ -83,7 +84,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     This is the first tab, with lots of stuff free for everyone,
                     ranging from food to enchants, gear, pots, bags... Random
                     stuff
@@ -111,7 +113,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     This is the second tab, focused on materials for everyone.
                   </Typography>
                 </React.Fragment>
@@ -135,7 +138,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     This is the third tab, focused on cosmetics like transmogs,
                     glyps, pets, toys...
                   </Typography>
@@ -145,7 +149,8 @@ const Events: FC = () => {
           </ListItem>
         </List>
         <List
-          sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
+          sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}
+        >
           <Typography variant="h5" color="red">
             Last 2 tabs
           </Typography>
@@ -168,7 +173,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     This is the second to last tab. It has mostly food and
                     potions to be used. Feel free to use them for M+ pushing
                     too.
@@ -196,7 +202,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     This is the last tab. It will have Vantus Runes when we can
                     craft them. For now it contains Missives, Legendary gear and
                     enchants.
@@ -207,7 +214,8 @@ const Events: FC = () => {
           </ListItem>
         </List>
         <List
-          sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
+          sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}
+        >
           <Typography variant="h5" color="red">
             What about the other tabs?
           </Typography>
@@ -229,7 +237,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     This tab is for the guild management team to keep materials
                     and excess stuff, used for the other tabs. If you want to
                     donate food, enchants, feasts, flasks and so on for raiding,
@@ -262,7 +271,8 @@ const Events: FC = () => {
                     sx={{ display: "inline" }}
                     component="span"
                     variant="body2"
-                    color="text.secondary">
+                    color="text.secondary"
+                  >
                     Wouldn't you like to know!
                   </Typography>
                 </React.Fragment>

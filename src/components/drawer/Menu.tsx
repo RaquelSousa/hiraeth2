@@ -15,8 +15,6 @@ import MenuList from "@mui/material/MenuList";
 import MenuItem from "@mui/material/MenuItem";
 import ListItemText from "@mui/material/ListItemText";
 import { Icon, Typography } from "@mui/material";
-import RaiderGuidelines from "../../assets/raider_guidelines.png";
-import ResourcesImg from "../../assets/resources.png";
 import "./menu.scss";
 
 const Menu = () => {
@@ -25,7 +23,8 @@ const Menu = () => {
       sx={{ height: "100%" }}
       direction="column"
       className="hiraeth-nav"
-      justifyContent="space-between">
+      justifyContent="space-between"
+    >
       <Stack direction="column">
         <Stack direction="column" spacing={2} sx={{ padding: "16px" }}>
           <img src={HiraethImg} className="hiraeth-logo" alt="Hiraeth" />
@@ -37,7 +36,8 @@ const Menu = () => {
               style={{ textDecoration: "none" }}
               key={route.key}
               to={route.path}
-              state={{ title: route.key }}>
+              state={{ title: route.key }}
+            >
               <MenuItem
                 sx={{
                   color: "text.primary",
@@ -45,7 +45,8 @@ const Menu = () => {
                     backgroundColor: "secondary.100",
                     color: "primary",
                   },
-                }}>
+                }}
+              >
                 <ListItemIcon>
                   <Icon color="warning">{route.icon as string}</Icon>
                 </ListItemIcon>
@@ -56,14 +57,21 @@ const Menu = () => {
         </MenuList>
         <Divider />
         <br />
-        <img src={RaiderGuidelines} alt="Raider Guidelines" />
+        <Typography
+          color="#fa4343"
+          variant="button"
+          sx={{ fontSize: "15px", fontWeight: "700" }}
+        >
+          Raider Guidelines
+        </Typography>
         <MenuList>
           {raiderRoutes.map((route: RouteItem) => (
             <Link
               style={{ textDecoration: "none" }}
               key={route.key}
               to={route.path}
-              state={{ title: route.key }}>
+              state={{ title: route.key }}
+            >
               <MenuItem
                 sx={{
                   color: "text.primary",
@@ -71,7 +79,8 @@ const Menu = () => {
                     backgroundColor: "secondary.100",
                     color: "primary",
                   },
-                }}>
+                }}
+              >
                 <ListItemIcon>
                   <Icon color="warning">{route.icon as string}</Icon>
                 </ListItemIcon>
@@ -82,14 +91,21 @@ const Menu = () => {
         </MenuList>
         <Divider />
         <br />
-        <img src={ResourcesImg} alt="Resources" />
+        <Typography
+          color="#fa4343"
+          variant="button"
+          sx={{ fontSize: "15px", fontWeight: "700" }}
+        >
+          Resources
+        </Typography>
         <MenuList>
           {resourcesRoutes.map((route: RouteItem) => (
             <Link
               style={{ textDecoration: "none" }}
               key={route.key}
               to={route.path}
-              state={{ title: route.key }}>
+              state={{ title: route.key }}
+            >
               <MenuItem
                 sx={{
                   color: "text.primary",
@@ -97,7 +113,8 @@ const Menu = () => {
                     backgroundColor: "secondary.100",
                     color: "primary",
                   },
-                }}>
+                }}
+              >
                 <ListItemIcon>
                   <Icon color="warning">{route.icon as string}</Icon>
                 </ListItemIcon>

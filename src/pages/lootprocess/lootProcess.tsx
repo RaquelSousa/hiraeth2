@@ -11,13 +11,13 @@ import {
   TimelineContent,
 } from "@mui/lab";
 import LootProcessList from "../../models/lootprocess/lootProcess.enum";
-import LootImg from "../../assets/loot.png";
+import Title from "../../components/title/Title";
 
 const LootProcess: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <img src={LootImg} alt="Events" className="loot-banner" />
+      <Stack spacing={2} direction="column" className="loot-body">
+        <Title label="Loot" />
         <Typography variant="h6">
           We try to maintain a fair loot distribution, however no process is
           flawless.
@@ -29,7 +29,8 @@ const LootProcess: FC = () => {
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
-                color="text.secondary"></TimelineOppositeContent>
+                color="text.secondary"
+              ></TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot color="warning" variant="outlined">

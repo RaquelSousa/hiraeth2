@@ -20,14 +20,14 @@ import {
 import guidelines from "../../models/guidelines/Guidelines.enum";
 import alts from "../../models/guidelines/Alts.enum";
 import leavingEasy from "../../models/guidelines/LeavingEasy.enum";
-import GuidelinesImg from "../../assets/guidelines.png";
 import SendIcon from "@mui/icons-material/Send";
+import Title from "../../components/title/Title";
 
 const Guidelines: FC = () => {
   return (
     <Stack direction="column" justifyContent="center" alignItems="center">
-      <Stack spacing={2} direction="column" className="body">
-        <img src={GuidelinesImg} alt="Events" className="guidelines-banner" />
+      <Stack spacing={2} direction="column" className="guidelines-body">
+        <Title label="Guidelines" />
         <Typography variant="h6">
           When we take our decisions, we follow certain guidelines to make sure
           we're consistent, fair, and that everyone knows what we're expecting,
@@ -44,7 +44,8 @@ const Guidelines: FC = () => {
           sx={{ width: "80%", bgcolor: "background.paper" }}
           component="nav"
           aria-labelledby="nested-list-subheader"
-          color="warning">
+          color="warning"
+        >
           <ListItem>
             <ListItemIcon>
               <SendIcon color="warning" />
@@ -65,7 +66,8 @@ const Guidelines: FC = () => {
                 sx={{ m: "auto 0" }}
                 align="right"
                 variant="body2"
-                color="text.secondary"></TimelineOppositeContent>
+                color="text.secondary"
+              ></TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot color="warning" variant="outlined">
